@@ -34,5 +34,11 @@ class RobotTest < Minitest::Test
     assert_equal true, robot1.will_return_to_start
   end
 
+  def test_it_will_not_return_to_start
+    robot1 = Robot.new("GRGRGGGGGRG")
+
+    assert_equal false, robot1.will_return_to_start
+  end
+
 
 end

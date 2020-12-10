@@ -16,7 +16,7 @@ class Robot
   end
 
   def will_return_to_start
-
+    require "pry"; binding.pry
   end
 
 end
